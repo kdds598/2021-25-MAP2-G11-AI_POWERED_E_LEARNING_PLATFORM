@@ -1,0 +1,130 @@
+.footer {
+  margin-top: 40px;
+  background-color: #0f0f1f;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+.intofooterinner {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.flink {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+.flink:hover {
+  background-color: #10c57d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.flink:active {
+  transform: translateY(-1px);
+}
+#linkedinbutton {
+  text-decoration: none;
+  color: white;
+  padding: 2px 6px;
+  border: solid 1px white;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+#linkedinbutton:hover {
+  background-color: #10c57d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#linkedinbutton:active {
+  transform: translateY(-1px);
+}
+#contactus2 {
+  display: none;
+}
+
+.centerContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.entryText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.224);
+  padding-top: 1rem;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.wholeindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Responsive behavior when the screen width is smaller */
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 666px) {
+  .entryText {
+    width: 100%;
+  }
+  .footerContainer {
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+  }
+  .intofooterinner {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .centerContainer {
+    flex-direction: column;
+  }
+  .wholeindiv h2 {
+    align-items: end;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    align-items: center;
+  }
+}
+@media (max-width: 470px) {
+  #contactus1 {
+    display: none;
+  }
+  #contactus2 {
+    display: block;
+  }
+}
+/*
+  .footer-column {
+    flex-basis: 100%; /* Make each column stack vertically */
+/* text-align: center; */
+/* }
+} */

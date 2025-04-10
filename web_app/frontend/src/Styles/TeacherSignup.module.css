@@ -1,0 +1,417 @@
+
+   .form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    justify-self: center;
+    /* max-width: 600px; */
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2, h4 {
+    color: #333;
+  }
+  
+  .pd {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #555;
+  }
+  
+  .input-style {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 2px 0px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .input-ed {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 2px 0px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .input-exp {
+    width: 240px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .input-exp:focus {
+    border-color: #007bff;
+  }
+  
+  .input-style:focus {
+    border-color: #007bff;
+  }
+  
+  .aeb {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+  }
+
+  .edDiv{
+    margin: 10px 0px;
+  }
+  
+  .aeb:hover {
+    background-color: #0056b3;
+  }
+  
+  .expList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .expItem {
+    background-color: #e9ecef;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline;
+    margin: 10px;
+  }
+  .sendotp{
+    background-color: #04990c93;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+  }
+  .sendotp:hover {
+    background-color: #035c0f;
+  }
+  
+
+  .delexpertise{
+    background-color: #ff0000c6;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+  }
+  .delexpertise:hover {
+    background-color: #a30000;
+  }
+
+  .addEducation {
+    background-color: #03da0da5;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .addEducation:hover {
+    background-color: #a30000;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  textarea,.linkedin
+  /* input[type="text"], input[type="email"], input[type="number"], input[type="password"] */
+   {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  /* p {
+    color: rgb(182, 0, 0);
+    font-size: 14px;
+    margin-top: 0.5rem;
+  } */
+  
+  /* Responsive Design */
+
+  /* .otpdiv{
+    width: 100%;
+    background-color: #6ba4e2;
+  } */
+
+  /* otp Component */
+  .otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Space between boxes */
+  }
+  .otpForm{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    margin-top: 140px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: #69696976 0px 0px 10px;
+    background: #f1f0f0;
+    flex-direction: column;
+    justify-self: center;
+    /* max-width: 800px; */
+  }
+  .outerOTPDiv{
+    
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+    outline: none;
+  }
+  
+  .otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+
+  /* -------below------------ */
+  /* From Uiverse.io by vinodjangid07 */ 
+.otp-Form {
+  width: 230px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+}
+
+.mainHeading {
+  font-size: 1.1em;
+  color: rgb(15, 15, 15);
+  font-weight: 700;
+  align-self: center;
+
+}
+
+.otpSubheading {
+  font-size: 0.7em;
+  color: black;
+  line-height: 17px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-input {
+  background-color: rgb(228, 228, 228);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  caret-color: rgb(127, 129, 255);
+  color: rgb(44, 44, 44);
+  outline: none;
+  font-weight: 600;
+}
+
+.otp-input:focus,
+.otp-input:valid {
+  background-color: rgba(127, 129, 255, 0.199);
+  transition-duration: .3s;
+}
+
+.verifyButton {
+  height: 30px;
+  width: 100px;
+  align-self: center;
+  margin: 10px 10px;
+  border: none;
+  background-color: rgb(127, 129, 255);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: .2s;
+}
+
+.verifyButton:hover {
+  background-color: rgb(144, 145, 255);
+  transition-duration: .2s;
+}
+
+.exitBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.resendNote {
+  font-size: 14px;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.resendBtn {
+  background-color: transparent;
+  border: none;
+  color: rgb(127, 129, 255);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.outerPassdiv{
+
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    height: 80vh;
+}
+.signupBtn{
+   background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+    margin-left: 5px;
+}
+
+  /* ------------------- */
+
+
+  @media (max-width: 960px) {
+    .input-style {
+      width: 340px;
+      
+    }
+  }
+
+  @media (max-width: 768px) {
+    .form {
+      padding: 1rem;
+    }
+    .input-style {
+      width: 100%;
+      
+    }
+    .input-style, button, textarea {
+      font-size: 14px;
+    }
+
+    .pd {
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      gap: 1rem;
+    }
+    .outerPassdiv{
+      display: flex;
+      flex-direction: column;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+}
+.signupBtn{
+  background-color: #007bff;
+   
+   margin-top: 5px;
+   margin-left: 0px;
+}
+  }
+  
+
+  @media (max-width: 370px) {
+    .input-exp{
+      width: 200px;
+    }
+  }
+  

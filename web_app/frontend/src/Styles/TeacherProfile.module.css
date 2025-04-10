@@ -1,0 +1,441 @@
+.profileContainer {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profileCard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .expertise {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .coursesSection {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .addCourseButton {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .courseList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+ 
+
+.courseCard {
+  display: flex;
+  
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+
+.coursecover {
+  width: 140px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+
+
+  
+  .courseCard {
+    /* background: linear-gradient(to right, #07468e, #040476); 
+     color: white; */
+    color: #333;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out;
+  }
+  
+/*
+course info end
+*/
+  
+  .courseDetails {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .editButton {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* margin-left: 6px; */
+    cursor: pointer;
+  }
+  .deleteButton{
+    background: #b90404fa;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+  .courseButtons{
+    display: flex;
+
+  }
+
+  .courseTitle{
+    justify-self: center;
+    align-self: start;
+  }
+
+
+
+
+
+
+
+
+  @media (max-width: 500px) {
+    .courseCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .courseButtons{
+      display: flex
+      ;
+          align-self: flex-start;
+    }
+  
+    .coursecover {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 5;
+      }
+      .courseDetails{
+        flex-direction: column;
+        align-items: center;
+      }
+  
+   
+  } 
+
+
+
+
+
+  /*add course*/
+  .addCourseDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .addCourseButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .createCourseDiv {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .createCourseDivHeading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .messagep {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .createCourseform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .createCourseTitleinput,
+  .createCourseDescinput,
+  .createCourseCatinput,
+  .createCourseTaginput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .createCourseTitleinput:focus,
+  .createCourseDescinput:focus,
+  .createCourseCatinput:focus,
+  .createCourseTaginput:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .createCourseTagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .createCourseTagListitem {
+    background: #517092a0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .createCourseTagListitem button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .createCourseImginput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .createCoursesubmit {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .createCoursesubmit:hover {
+    background: #0056b3;
+  }
+  
+  .createCoursesubmit:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  
+  .addTag {
+    background-color: #007bff; /* Green color */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+  }
+  
+  .addTag:hover {
+    background-color: #0056b3; /* Slightly darker green */
+  }
+  
+  .profileCard {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    /* max-width: 480px; */
+    margin: auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+    justify-self: center;
+  }
+  
+  /* input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
+  } */
+  
+  .addedu{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .Eh3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .Ep {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #444;
+  }
+  
+  .Einput,
+  .Etextarea {
+    width: calc(100%-8px);
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .Einput:focus,
+  .Etextarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .Eul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Eli {
+    background: #f4f4f4;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Ebutton,
+  .EAddexpbutton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  .Edelbutton{
+   
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;  }
+
+  .Edelbutton {
+    background: #dc3545;
+  }
+  
+  .Ebutton:hover,
+  .EAddexpbutton:hover {
+    background: #0056b3;
+  }
+  
+  .Edelbutton:hover {
+    background: #b52b39;
+  }
+/*   
+  button:last-child {
+    margin-top: 12px;
+  } */
+  
+  @media (max-width: 600px) {
+    .profileCard {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

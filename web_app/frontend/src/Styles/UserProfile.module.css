@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #333; /* Adjust color to match your design */
+}
+.Acc-info-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Acc-heading {
+  font-weight: 800;
+  max-width: 70%;
+  margin-top: 40px; /* mt-3 */
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800; /* font-extrabold */
+  letter-spacing: -0.015em; /* tracking-tight */
+  color: #0f172a;
+}
+.Acc-sub-text {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 1rem; /* mt-4 */
+  margin-bottom: 1rem; /* mb-4 */
+  width: 100%;
+  font-size: 1rem; /* text-base */
+  line-height: 1.75; /* leading-7 */
+  color: #334155;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+  padding: 40px;
+}
+.inn1subt {
+  width: 60%;
+}
+.inn2subt {
+  border-radius: 50%;
+  border: solid rgb(60, 61, 61) 4px;
+  overflow: hidden;
+  background-color: #000;
+  text-align: end;
+  width: 160px;
+  height: 160px;
+}
+#dif1 {
+}
+#dif1::before {
+  content: "Total Accounts created : ";
+}
+#dif2 {
+}
+#dif2::before {
+  content: "Total Budgets created : ";
+}
+
+@media (max-width: 925px) {
+  .Acc-info-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 812px) {
+  .Acc-info-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .Acc-sub-text {
+    flex-direction: column-reverse;
+  }
+  .Acc-sub-text {
+    align-items: center;
+  }
+  .inn1subt {
+    width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .inn1subt {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .inn1subt {
+    width: 100%;
+  }
+  #fft {
+    font-size: 20px;
+  }
+  #dif1::before {
+    content: "Total Accounts: ";
+  }
+  #dif2::before {
+    content: "Total Budgets : ";
+  }
+}

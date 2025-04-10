@@ -1,0 +1,226 @@
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    /* background-color: #ffffff; */
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 8px rgba(94, 150, 229, 0.452);
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    height: 60vh;
+  }
+
+  .inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .input-style {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 2px 0px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .input-style:focus {
+    border-color: #007bff;
+  }
+  
+  .heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    justify-self: center;
+  }
+  
+  .successMessage {
+    color: #16a34a;
+    font-weight: 600;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .emailButton {
+    background-color: #3b82f6;
+  }
+  
+  .googleButton {
+    background-color: #ef4444;
+  }
+  
+  .otpButton {
+    background-color: #0bf51b79;
+  }
+  
+  .otpButton:hover {
+    background-color: #00990a;
+  }
+  
+  .verifyButton {
+    background-color: #10b981;
+  }
+  
+  .completeButton {
+    background-color: #3b82f6;
+    margin-top: 5px;
+    
+  }
+  .pdiv{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-between;
+  }
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .inputField:focus {
+    border-color: #3b82f6;
+  }
+  /* otp Component */
+  .otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Space between boxes */
+  }
+  .otpForm{
+    /* width: 300px; */
+    height: 100%;
+    display: flex;
+    /* margin-top: 140px; */
+    padding: 30px;
+    border-radius: 20px;
+    /* box-shadow: #69696976 0px 0px 10px; */
+    /* background: #f1f0f0; */
+    flex-direction: column;
+    justify-self: start;
+    /* max-width: 800px; */
+  }
+  .outerOTPDiv{
+    
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+    outline: none;
+  }
+  
+  .otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+
+  
+.otp-Form {
+  width: 230px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+}
+
+.mainHeading {
+  font-size: 1.1em;
+  color: rgb(15, 15, 15);
+  font-weight: 700;
+  align-self: center;
+
+}
+
+.otpSubheading {
+  font-size: 0.7em;
+  color: black;
+  line-height: 17px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.otp-input {
+  background-color: rgb(228, 228, 228);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  caret-color: rgb(127, 129, 255);
+  color: rgb(44, 44, 44);
+  outline: none;
+  font-weight: 600;
+}
+
+.otp-input:focus,
+.otp-input:valid {
+  background-color: rgba(127, 129, 255, 0.199);
+  transition-duration: .3s;
+}
+
+.verifyButton {
+  height: 30px;
+  width: 100px;
+  align-self: center;
+  margin: 10px 10px;
+  border: none;
+  background-color: rgb(127, 129, 255);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: .2s;
+}
+
+.verifyButton:hover {
+  background-color: rgb(144, 145, 255);
+  transition-duration: .2s;
+}
+
+@media (max-width: 360px) {
+  .otpForm {
+    padding: 0px;
+  }
+}
