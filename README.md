@@ -1,7 +1,7 @@
-# EduSphere: E-Learning Management System
+# AI Powered E-Learning System
 
 ## **Project Description**
-EduSphere is a full-stack e-learning management system built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to explore and engage in interactive courses. This system supports video content, lesson tracking, and student progress monitoring.
+AI Powered E-Learning System is a full-stack e-learning management system built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to explore and engage in interactive courses. This system supports video content, lesson tracking, and student progress monitoring.
 
 The app includes Google authentication via Firebase, a robust backend for handling users and course data, and MongoDB for storing all user-related and course-related information.
 
