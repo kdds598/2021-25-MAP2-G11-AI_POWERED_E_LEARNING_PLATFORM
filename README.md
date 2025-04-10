@@ -1,7 +1,10 @@
 # AI Powered E-Learning System
 
 ## **Project Description**
-AI Powered E-Learning System is a full-stack e-learning management system built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to explore and engage in interactive courses. This system supports video content, lesson tracking, and student progress monitoring.
+
+it is an innovative AI-powered e-learning management system meticulously crafted with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers a dynamic and engaging learning environment where students can explore interactive courses enriched with video lectures. The platform goes beyond traditional learning by integrating AI to provide intelligent support through a chatbot that answers lecture-related questions and automatically generates quizzes to reinforce learning. Furthermore, it empowers educators to seamlessly upload and manage their course content, including comprehensive video lectures, making high-quality education accessible to all. The system also incorporates robust features for tracking student progress and ensuring a personalized learning journey.
+
+Built with a focus on security and ease of use, it utilizes Google or email authentication via Firebase for a streamlined login process. A well-architected backend efficiently manages user and course data, with MongoDB serving as the reliable database backbone. Cloudinary is integrated for efficient cloud storage and management of all media assets, ensuring a smooth and responsive user experience.
 
 The app includes Google authentication via Firebase, a robust backend for handling users and course data, and MongoDB for storing all user-related and course-related information.
 
@@ -16,14 +19,24 @@ The app includes Google authentication via Firebase, a robust backend for handli
 - **Vite**: Fast build tool and development server for the frontend.
 
 ## **Features**
-- **Google Authentication**: Secure login using Firebase.
-- **Real-time Progress Tracking**: Track course and lesson completion in real time.
-- **Course Management**: Admins can upload courses with videos, PDFs, and documents.
-- **User Dashboard**: Users can view enrolled courses and track progress.
-- **Video Streaming**: Watch course lectures directly from the platform.
-- **Interactive Learning**: Quizzes, notes, and assignment uploads.
-- **Cloud Storage**: All media and course files stored securely using Cloudinary.
-- **Data Download**: Export progress data for backup or analysis.
+
+## 🔐 Non-Fun (Essential) Features
+
+- Authentication (via Firebase)
+- Course Uploading (Teachers)
+- Video Streaming & Playback
+- Secure Media Uploads (Cloudinary)
+- User Management (via backend & database)
+
+## 🎉 Fun (AI-Powered Interactive) Features
+
+- AI Chatbot to answer lecture-related questions
+- Auto Quiz Generator from lecture transcripts
+- AI-based Video Transcription using Whisper
+- Live Q&A from Video Content
+- Gamified Learning through quizzes
+- Dynamic MCQs from Lecture Videos
+- Transcript View for Each Lecture
 
 ---
 
@@ -90,7 +103,6 @@ VITE_FB_STORAGEBUCKET=your_firebase_storagebucket
 VITE_FB_MESSAGINGSENDERID=your_firebase_messagingsenderid
 VITE_FB_APPID=your_firebase_appid
 VITE_FB_MEASUREMENTID=your_firebase_measurementid
-VITE_Backend_URL=http://localhost:3000/api
 ```
 Replace `http://localhost:3000/api` with your actual backend URL during deployment.
 
