@@ -54,7 +54,7 @@ Follow these steps to set up the **EduSphere** project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/edusphere.git
+git clone https://github.com/kdds598/2021-25-MAP2-G11-AI_POWERED_E_LEARNING_PLATFORM.git
 cd edusphere
 ```
 
